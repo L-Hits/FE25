@@ -1,0 +1,47 @@
+[
+  {
+    "name": "개선",
+    "color": "a2eeef",
+    "description": "새로운 기능 혹은 요청입니다."
+  },
+  {
+    "name": "도움 필요",
+    "color": "008672",
+    "description": "작업을 진행하기 위해 도움이 필요합니다."
+  },
+  {
+    "name": "문서화",
+    "color": "0075ca",
+    "description": "문서의 추가 및 변경에 관한 작업입니다."
+  },
+  {
+    "name": "반려됨",
+    "color": "ffffff",
+    "description": "이 작업은 진행되지 않을 것입니다."
+  },
+  {
+    "name": "버그",
+    "color": "d73a4a",
+    "description": "작업에 오류가 발생했습니다. "
+  },
+  {
+    "name": "오류 의심",
+    "color": "e4e669",
+    "description": "작업에 오류가 의심됩니다."
+  },
+  {
+    "name": "중복",
+    "color": "cfd3d7",
+    "description": "이미 동일하거나 비슷한 이슈가 존재합니다."
+  },
+  {
+    "name": "질문",
+    "color": "d876e3",
+    "description": "작업에 대한 더 많은 정보가 필요합니다."
+  },
+  {
+    "name": "dependencies",
+    "color": "0366d6",
+    "description": "Pull requests that update a dependency file"
+  }
+]

@@ -1,0 +1,27 @@
+name: Label Sync
+
+on:
+  workflow_dispatch:
+
+jobs:
+  sync-labels:
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: write 
+      issues: write  # GITHUB_TOKEN 한테 권한 부여
+      # 템플릿으로 레포지토리 생성 시 키의 권한은 read로 제한됨 이걸 변경해야함
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v3
+
+      - name: Install github-label-sync
+        run: npm install -g github-label-sync
+
+      - name: Sync labels
+        run: |
+          github-label-sync \
+            --access-token ${{ secrets.GITHUB_TOKEN }} \
+            --labels ./.github/workflows/labels.json \
+            ${{ github.repository }}
