@@ -27,7 +27,7 @@ li {
 header {
   /* ② */
   position: fixed;
-  color: white ;
+  color: white;
   top: 0;
   z-index: 1;
   width: 100%;
@@ -63,7 +63,7 @@ header h1 button {
 
 header nav ul li button {
   font-size: 1.2rem;
-  color:white;
+  color: white;
 }
 /* 헤더 영역 끝 */
 
@@ -135,20 +135,49 @@ main button.mouse {
 }
 
 /* 텍스트 타이핑 효과 */
-main h2 span::after{
-  content:"";
-  height:40px;
-  width:3px;
-  background-color:#fff; 
-  display:inline-block;
-  animation:blink .7s ease-in-out infinite;
+main h2 span::after {
+  content: "";
+  height: 40px;
+  width: 3px;
+  background-color: #fff;
+  display: inline-block;
+  animation: blink 0.7s ease-in-out infinite;
 }
-@keyframes blink{
-  0%{
-    opacity:1;
+@keyframes blink {
+  0% {
+    opacity: 1;
   }
-  100%{
-    opacity:0;
+  100% {
+    opacity: 0;
   }
 }
 /* 메인 영역 끝 */
+
+/* About 영역 */
+section {
+  font-family: "oppins", sans-serif;
+  padding: 5rem 0;
+}
+
+section:nth-child(2n) {
+  background-color: #f8f8f8;
+}
+
+section .title {
+  margin-bottom: 3rem;
+}
+
+section .title h4 {
+  font-size: 1.35rem;
+  color: #ed4848;
+  position: relative;
+}
+
+section .title h2 {
+  font-size: 3.5rem;
+}
+
+section .title p {
+  font-size: 1.15rem;
+}
+/* About 영역 끝 */
