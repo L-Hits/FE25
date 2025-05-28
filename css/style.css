@@ -79,4 +79,19 @@ main {
   text-align: center;
 }
 
+main h4 {
+  font-size: 2rem;
+}
+
+main h2 {
+  font-size: 3.5rem;
+  margin: 2rem 0;
+  letter-spacing: 3px;
+}
+
+main p {
+  max-width: 500px;
+  margin: 0 auto;
+  font-size: 1.25rem;
+}
 /* 메인 영역 끝 */
