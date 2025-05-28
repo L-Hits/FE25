@@ -26,8 +26,8 @@ li {
 /* 헤더 영역 */
 header {
   /* ② */
-  position: absolute;
-  color: black;
+  position: fixed;
+  color: white ;
   top: 0;
   z-index: 1;
   width: 100%;
@@ -58,10 +58,12 @@ header button {
 header h1 button {
   font-size: 2rem;
   font-weight: bold;
+  color: white;
 }
 
 header nav ul li button {
   font-size: 1.2rem;
+  color:white;
 }
 /* 헤더 영역 끝 */
 
@@ -107,6 +109,7 @@ main button.download {
   cursor: pointer;
 }
 
+/* 버튼 호버 효과 */
 main button.mouse {
   background-color: transparent;
   border: none;
@@ -128,6 +131,24 @@ main button.mouse {
   }
   100% {
     bottom: 1rem;
+  }
+}
+
+/* 텍스트 타이핑 효과 */
+main h2 span::after{
+  content:"";
+  height:40px;
+  width:3px;
+  background-color:#fff; 
+  display:inline-block;
+  animation:blink .7s ease-in-out infinite;
+}
+@keyframes blink{
+  0%{
+    opacity:1;
+  }
+  100%{
+    opacity:0;
   }
 }
 /* 메인 영역 끝 */
